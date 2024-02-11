@@ -23,6 +23,11 @@
         border: none;
         border-radius: 1rem;
         padding: calc(v.$separacion / 4);
+        width: 95%;
+
+        @include m.tablet{
+            max-width: 100%;
+        }
 
         &:disabled{
             background-color: lighten(v.$negro, 10%);
